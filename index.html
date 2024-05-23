@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        body{
+            background:yellow;
+        }
+           input{    
+            border: 2px solid black;
+            outline: none;
+            padding: 2px;
+            
+           }
+           input.error{
+            border: 1px solid red;
+           }  
+           input.scusses{
+            border: 1px solid green;
+           }
+        .message{
+            visibility: hidden;
+
+        }
+        .message.error{
+            visibility: visible;
+            color: red;
+        }
+        .maindiv{
+            display: flex;
+            justify-content: space-between;
+            gap: 300px;
+            margin-top: 50px;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        .childdiv{
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .input{
+            border: 1px solid black;
+            outline: none;
+
+        }
+        input{
+            height: 20px;
+            border-radius: 50px;
+        }
+        label{
+            font-size: 22px;
+        }
+        button{
+            font-size: 25px;
+            padding: 5px 20px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+       #Userform{
+           margin: 0px 300px;
+       }
+       .message{
+        width: 300px;
+       }
+      
+
+
+    </style>
+</head>
+<body>
+
+   <div class="main">
+    
+     <h1>Form Validation</h1>
+
+
+    <form action="" id="Userform">
+    <div class="maindiv">
+        <div>
+        <div class="childdiv">
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Username" class="input">
+            <span class="message">
+                its required
+            </span>
+        </div>
+
+        <div class="childdiv">
+            <label for="mobile">Mobile Number</label>
+            <input type="number" name="number" id="mobile" class="input">
+            <span class="message">
+                its required
+            </span>
+        </div>
+
+
+        <div class="childdiv">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input">
+            <span class="message">
+                its required
+            </span>
+        </div>
+
+        <div class="childdiv">
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" class="input">
+            <span class="message">
+                its required
+            </span>
+        </div>
+
+        <div class="childdiv">
+            <label for="Password">Confirm Password</label>
+            <input type="password" name="password" id="Confirmpassword" class="input">
+            <span class="message">
+                its required
+            </span>
+        </div>
+
+
+        <button type="submit">Submit</button>
+
+        </div>
+
+
+<!-- 2nddiv -->
+
+
+        <div>
+            <div class="childdiv">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" class="input">
+                <span class="message">
+                    its required
+                </span>
+            </div>
+    
+            <div class="childdiv">
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" class="input">
+                <span class="message">
+                    its required
+                </span>
+            </div>
+    
+    
+            <div class="childdiv">
+                <label for="month">Month</label>
+                <input type="month" name="month" id="month" class="input">
+                <span class="message">
+                    its required
+                </span>
+            </div>
+    
+            <div class="childdiv">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" class="input">
+                <span class="message">
+                    its required
+                </span>
+            </div>
+    
+            <div class="childdiv">
+                <label for="Chekbox">Gender</label>
+                <div style="margin-top: 5px;">
+                    <input type="radio" name="checkbox" id="checkmale" class="input"><label for="gender">Male</label>
+                    <input type="radio" name="checkbox" id="checkFemale" class="input"><label for="gender">Female</label>
+                    <input type="radio" name="checkbox" id="checkothers" class="input"><label for="gender">Other</label>
+                </div>
+                
+                <span class="message">
+                    its required
+                </span>
+            </div>
+    
+            </div>
+    
+
+
+    </div>
+       
+    </form>
+
+   </div>
+
+</body>
+<script src="script.js"></script>
+</html>
